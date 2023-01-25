@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-og_img = cv2.imread('face.jpg')
+og_img = cv2.imread('img/face.jpg')
 gray_img = cv2.cvtColor(og_img, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('original', og_img)

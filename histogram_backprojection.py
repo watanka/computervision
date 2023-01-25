@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-model_img = cv2.imread('face.jpg')
+model_img = cv2.imread('img/face.jpg')
 model_hsv_img = cv2.cvtColor(model_img, cv2.COLOR_BGR2HSV)
 
-curr_img = cv2.imread('face2.jpg')
+curr_img = cv2.imread('img/face2.jpg')
 curr_hsv_img = cv2.cvtColor(curr_img, cv2.COLOR_BGR2HSV)
 
 cv2.imshow('original', model_img)
