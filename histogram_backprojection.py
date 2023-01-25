@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 model_img = cv2.imread('img/face.jpg')
-model_hsv_img = cv2.cvtColor(model_img, cv2.COLOR_BGR2HSV)
+model_hsv_img = cv2.cvtColor(model_img, cv2.COLOR_BGR2HSV) ## HSV = HSI, Value = Intensity
 
 curr_img = cv2.imread('img/face2.jpg')
 curr_hsv_img = cv2.cvtColor(curr_img, cv2.COLOR_BGR2HSV)
