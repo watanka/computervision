@@ -35,7 +35,8 @@ _, naive_threshed = cv2.threshold(gray_img, best_threshold, 255, cv2.THRESH_BINA
 _, otsu_threshed = cv2.threshold(gray_img, -1, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 
 
-# OTSU algorithm : more efficient version ## TODO : 값이 naive와 다름. 뭔가 잘못됨.
+# OTSU algorithm : more efficient version 
+# ## TODO : 값이 naive와 다름. 뭔가 잘못됨.
 ## 순환식으로 T-1에 대해 구한 값을 활용하여 연산량을 줄임.
 ## w0(t) = w0(t-1) + h(t)
 ## mu_0(t) = (w0(t-1)*mu_0(t-1) + t*h(t)) / w0(t)
