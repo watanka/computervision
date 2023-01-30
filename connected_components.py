@@ -40,7 +40,7 @@ def efficient_floodfill(img, j, i, label) :
             while img[y, right + 1] == label :
                 right += 1
 
-            for c in range(left, right) :
+            for c in range(left, right+1) :
                 img[y,c] = label
                 if img[y-1, c] == -1 and (c==left or img[y-1, c-1] != -1) :
                     queue.append((y-1, c))

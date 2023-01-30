@@ -27,6 +27,7 @@ naive_downsample_imgs = np.hstack(raw_img_list)
 cv2.imshow('Raw downsample', naive_downsample_imgs)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+cv2.imwrite('result/downsampling_raw[1,2,4,8,16].jpg', naive_downsample_imgs)
 # 스무딩 후 다운샘플링
 
 smoothing_filter_1d = np.array([[0.05, 0.25, 0.40, 0.25, 0.05]])
@@ -64,9 +65,10 @@ smooth_downsample_imgs = np.hstack(smooth_img_list)
 cv2.imshow('Smooth&downsample', smooth_downsample_imgs)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+cv2.imwrite('result/downsampling_smooth[1,2,4,8,16].jpg', smooth_downsample_imgs)
 
 compare = np.hstack( [raw_img_list[-1], smooth_img_list[-1]])
 cv2.imshow('Raw vs Smoothe Downsampling with r = 16', compare)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+cv2.imwrite('result/downsampling_raw_smooth.jpg', compare)
