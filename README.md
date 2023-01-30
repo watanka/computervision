@@ -2,7 +2,7 @@
 블로그 link : [https://silvercity.notion.site/Computer-Vision-dd524ebaa39442a1bd58185e7a2628f7]
 
 <details>
-<summary> **Chapter 2. 영상처리** </summary>
+<summary> Chapter 2. 영상처리 </summary>
 
 2. 히스토그램
 - 히스토그램 평활화
