@@ -7,7 +7,7 @@ img =  cv2.imread('img/face.jpg')
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 height, width = gray_img.shape[:2]
-
+  
 variations = []
 
 naive_otsu_start = time.time()
